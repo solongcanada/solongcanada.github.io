@@ -5,7 +5,7 @@
         day = hour * 24;
 
     x = setInterval(function () {
-        countDown = 1633253700000;
+        countDown = 1630659600000 + 2100000;
 
         let now = new Date().getTime(),
             distance = now - countDown;
