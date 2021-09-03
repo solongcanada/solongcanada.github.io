@@ -9,9 +9,9 @@
 
         let now = new Date().getTime(),
             distance = now - countDown;
-
+ 
+        const status = document.getElementById("status");
         if (distance <= 0) {
-            const status = document.getElementById("status");
             status.innerHTML = "離 Solong 離港";
             distance *= -1;
         } else {
