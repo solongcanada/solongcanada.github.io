@@ -4,6 +4,24 @@
     padding: 0;
 }
 
+.rain-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+i {
+  position: absolute;
+  height: 200px;
+  font-size: 1rem;
+  font-family: 'Kaiti';
+  border-radius: 0 0 999px 999px;
+  animation: animate 5s linear infinite;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
 body {
     height: 100vh;
     margin: 0;
@@ -42,6 +60,10 @@ li span {
     font-size: 4.5rem;
 }
 
+#space {
+  margin: 10%;
+}
+
 .message {
     display: flex;
     flex-direction: column;
@@ -57,8 +79,20 @@ li span {
     content: "";
     flex: 1;
 }
-  
-  
+
+ul#clock li span{
+  font-size: 1em;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(-1000px);
+  }
+  100% {
+    transform: translateY(calc(100vh + 120px));
+  }
+}
+
 @media all and (max-width: 820px) {
     h1 {
       font-size: 0.7em;
