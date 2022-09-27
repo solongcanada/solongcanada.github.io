@@ -53,7 +53,7 @@
         const clock_hk_time = document.getElementById("clock_hk_time");
         const clock_can_time = document.getElementById("clock_can_time");
 
-        let hk_time_text = new Date().toLocaleTimeString();
+        let hk_time_text = new Date().toLocaleTimeString("en-US", {timeZone: 'Asia/Hong_Kong'});
         let can_time_text = new Date().toLocaleTimeString("en-US", {timeZone: "Canada/Yukon"});
 
         clock_hk_time.innerText = hk_time_text;
